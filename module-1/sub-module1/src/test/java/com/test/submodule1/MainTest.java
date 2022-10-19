@@ -44,7 +44,7 @@ public class MainTest {
     public void addMinus(){
         Main main = new Main();
         try {
-            sleep(5);
+            sleep(15);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
