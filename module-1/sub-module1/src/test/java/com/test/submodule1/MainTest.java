@@ -1,9 +1,10 @@
-import com.test.submodule1.Main;
+package com.test.submodule1;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class MainTests {
+public class MainTest {
 
     @Test
     public void addTests(){
