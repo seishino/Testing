@@ -11,7 +11,7 @@ public class MainTest {
         Main main = new Main();
 
         try {
-            sleep(5);
+            sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
