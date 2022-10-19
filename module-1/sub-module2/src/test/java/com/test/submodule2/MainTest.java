@@ -10,7 +10,7 @@ public class MainTest {
     public void convert(){
         Main main = new Main();
         try {
-            sleep(5000);
+            sleep(15000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
