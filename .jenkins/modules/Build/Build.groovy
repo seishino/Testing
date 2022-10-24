@@ -1,5 +1,4 @@
-def modules = [:]
-modules["sub-module1"] = {
+parallel {
     stage("sub-module1"){
         node("sub-module1-node"){
             steps{
@@ -9,8 +8,6 @@ modules["sub-module1"] = {
             }
         }
     }
-}
-modules["sub-module2"] = {
      stage("sub-module1"){
         node("sub-module2-node"){
             steps{
@@ -20,8 +17,6 @@ modules["sub-module2"] = {
             }
         }
     }
-}
-modules["module-2"]= {
     stage("module-2"){
         node("module-2-node"){
             steps{
@@ -32,4 +27,3 @@ modules["module-2"]= {
         }
     }
 }
-parallel modules
