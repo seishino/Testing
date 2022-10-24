@@ -1,3 +1,8 @@
 @Library('mpl') _
 
-MPLPipeline {}
+MPLPipeline {[
+    git: {
+        url: 'https://github.com/seishino/Testing',
+        branch: 'master' 
+    }
+]}
