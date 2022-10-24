@@ -10,7 +10,6 @@ public class MainTest {
         Main main = new Main();
 
         try {
-            Thread.sleep(45000);
             assertEquals(main.concat("test1", "test2"), "test1test2");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

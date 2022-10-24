@@ -9,7 +9,6 @@ public class MainTest {
     public void convert(){
         Main main = new Main();
         try {
-            Thread.sleep(45000);
             assertEquals(main.convertCelciusToFahrenheit(25.0), 77.0, 0.0);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
