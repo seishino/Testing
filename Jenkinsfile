@@ -1,13 +1,10 @@
 pipeline {
     agent any
-    stages {    
+    stages{
         stage('test-parallel') {
-		parallel{
-			steps {
-                		sh 'mvn install'
-            		}
-		}
-            
+            steps{
+                    sh 'mvn install'
+            }
         }
     }
 }
