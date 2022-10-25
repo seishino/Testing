@@ -1,6 +1,7 @@
+import static Common.*
+
 def modules = [:]
-def common = load '.jenkins/modules/Common.groovy'
-common.modules_list.each{
+MODULES_LIST.each{
     modules[it.stage_title] = {
         stage(it.stage_title){
             MPLModule("Maven Build",[
