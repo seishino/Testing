@@ -1,7 +1,7 @@
-import static Common.*
+import Common
 
 def modules = [:]
-MODULES_LIST.each{
+Common.MODULES_LIST.each{
     modules[it.stage_title] = {
         stage(it.stage_title){
             MPLModule("Maven Build",[
