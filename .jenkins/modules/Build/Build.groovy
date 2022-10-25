@@ -1,5 +1,5 @@
 def modules = [:]
-def common = load '../Common.groovy'
+def common = load '.jenkins/modules/Common.groovy'
 common.modules_list.each{
     modules[it.stage_title] = {
         stage(it.stage_title){
