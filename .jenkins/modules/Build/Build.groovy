@@ -1,7 +1,7 @@
-import Common
+evaluate(new File("../Common.groovy"))
 
 def modules = [:]
-Common.MODULES_LIST.each{
+MODULES_LIST.each{
     modules[it.stage_title] = {
         stage(it.stage_title){
             MPLModule("Maven Build",[

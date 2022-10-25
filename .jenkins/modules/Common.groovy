@@ -1,6 +1,5 @@
 
-class Common{
-    static final MODULES_LIST = [
+def MODULES_LIST = [
         [
             stage_title: "sub-module1",
             module_name: "module-1/sub-module1"
@@ -14,4 +13,3 @@ class Common{
             module_name: "module-2"
         ]
     ]
-}
