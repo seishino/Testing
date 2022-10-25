@@ -14,11 +14,11 @@ def modules_list = [
         module_name: "module-2"
     ]
 ]
-for (i in modules_list){
-    modules[modules_list.stage_title] = {
-        stage(modules_list.stage_title){
+modules_list.each{
+    modules[${it}.stage_title] = {
+        stage(${it}.stage_title){
             MPLModule("Maven Build",[
-                module_name: modules_list.module_name
+                module_name: ${it}.module_name
             ])
         }
     }
