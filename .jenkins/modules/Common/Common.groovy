@@ -1,5 +1,4 @@
-
-def MODULES_LIST = [
+def module_list = [
         [
             stage_title: "sub-module1",
             module_name: "module-1/sub-module1"
