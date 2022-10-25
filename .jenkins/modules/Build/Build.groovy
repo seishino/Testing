@@ -15,10 +15,10 @@ def modules_list = [
     ]
 ]
 modules_list.each{
-    modules[${it}.stage_title] = {
-        stage(${it}.stage_title){
+    modules[it.stage_title] = {
+        stage(it.stage_title){
             MPLModule("Maven Build",[
-                module_name: ${it}.module_name
+                module_name: it.module_name
             ])
         }
     }
