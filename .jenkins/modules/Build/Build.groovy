@@ -1,4 +1,4 @@
-evaluate(new File("../Common.groovy"))
+evaluate(new File(".jenkins/modules/Common.groovy"))
 
 def modules = [:]
 MODULES_LIST.each{
